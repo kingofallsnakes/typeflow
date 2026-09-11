@@ -36,9 +36,16 @@ export function Wordmark() {
   return (
     <Link
       to="/"
-      className="font-mono text-base font-semibold tracking-[-0.04em] whitespace-nowrap sm:text-lg"
+      className="flex items-center gap-2.5 font-mono text-base font-semibold tracking-[-0.04em] whitespace-nowrap transition-opacity hover:opacity-90 sm:text-lg"
     >
-      TYPE<span className="gradient-text">FLOW</span>
+      <img
+        src="/logo.png"
+        alt="TypeFlow Logo"
+        className="size-7 rounded-md object-contain sm:size-8"
+      />
+      <span>
+        TYPE<span className="gradient-text">FLOW</span>
+      </span>
     </Link>
   );
 }
