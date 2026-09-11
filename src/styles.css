@@ -1,0 +1,308 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant light (&:is(.light *));
+
+/*
+ * Cobra design system.
+ * Dark is the default theme (:root); .light overrides on <html>.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--elevated);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--elevated);
+  --color-secondary-foreground: var(--foreground);
+  --color-muted: var(--elevated);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--primary);
+  --color-chart-1: var(--primary);
+  --color-chart-2: var(--accent);
+  --color-chart-3: var(--warning);
+  --color-chart-4: var(--destructive);
+  --color-chart-5: var(--muted-foreground);
+  --color-f1: var(--finger-1);
+  --color-f2: var(--finger-2);
+  --color-f3: var(--finger-3);
+  --color-f4: var(--finger-4);
+  --color-f5: var(--finger-5);
+  --color-f6: var(--finger-6);
+  --color-f7: var(--finger-7);
+  --color-f8: var(--finger-8);
+  --color-f9: var(--finger-9);
+  --font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.145 0.004 285.8);
+  --surface: oklch(0.178 0.005 285.8);
+  --elevated: oklch(0.216 0.006 285.9);
+  --foreground: oklch(0.985 0 0);
+  --muted-foreground: oklch(0.712 0.013 286.1);
+  --border: oklch(0.274 0.006 286.0);
+  --primary: oklch(0.612 0.204 288.5);
+  --primary-foreground: oklch(0.99 0 0);
+  --accent: oklch(0.723 0.192 149.6);
+  --accent-foreground: oklch(0.16 0.02 150);
+  --warning: oklch(0.769 0.163 70.1);
+  --destructive: oklch(0.637 0.208 25.3);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --finger-1: oklch(0.65 0.19 20);
+  --finger-2: oklch(0.72 0.16 60);
+  --finger-3: oklch(0.78 0.15 100);
+  --finger-4: oklch(0.72 0.17 150);
+  --finger-5: oklch(0.65 0.05 280);
+  --finger-6: oklch(0.7 0.15 200);
+  --finger-7: oklch(0.68 0.16 250);
+  --finger-8: oklch(0.66 0.18 300);
+  --finger-9: oklch(0.68 0.18 340);
+}
+
+.light {
+  --background: oklch(0.995 0.002 285);
+  --surface: oklch(0.975 0.003 285);
+  --elevated: oklch(0.945 0.004 285);
+  --foreground: oklch(0.19 0.01 286);
+  --muted-foreground: oklch(0.48 0.014 286);
+  --border: oklch(0.9 0.005 286);
+  --primary: oklch(0.56 0.21 288.5);
+  --primary-foreground: oklch(0.99 0 0);
+  --accent: oklch(0.62 0.17 149.6);
+  --accent-foreground: oklch(0.99 0 0);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-primary) 35%, transparent);
+  }
+}
+
+@utility text-balance-tight {
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+@utility surface-panel {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+@utility caret-blink {
+  animation: caret-pulse 1.05s steps(2, start) infinite;
+}
+
+@keyframes caret-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes key-press {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@utility key-pressed {
+  animation: key-press 120ms ease-out;
+}
+
+/* ---------- playful layer ---------- */
+
+@utility gradient-text {
+  background-image: linear-gradient(
+    92deg,
+    var(--color-primary),
+    var(--color-f9),
+    var(--color-accent)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility glow-card {
+  position: relative;
+  background:
+    linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+    linear-gradient(135deg, color-mix(in oklab, var(--color-primary) 55%, transparent),
+      color-mix(in oklab, var(--color-accent) 45%, transparent)) border-box;
+  border: 1px solid transparent;
+  border-radius: calc(var(--radius) + 6px);
+  transition:
+    transform 220ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 220ms ease;
+}
+
+@utility glow-card-hover {
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -20px color-mix(in oklab, var(--color-primary) 70%, transparent);
+  }
+}
+
+@utility pop-in {
+  animation: pop-in 320ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@utility float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@utility shimmer {
+  background-image: linear-gradient(
+    100deg,
+    transparent 20%,
+    color-mix(in oklab, var(--color-foreground) 18%, transparent) 50%,
+    transparent 80%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.4s linear infinite;
+}
+
+@utility confetti-bit {
+  animation-name: confetti-fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-10vh) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(105vh) rotate(720deg);
+  }
+}
+
+@keyframes flame-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 8px color-mix(in oklab, var(--color-warning) 70%, transparent));
+  }
+}
+
+@utility flame {
+  animation: flame-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------------------------------------------------- shop skins */
+:root[data-theme="theme-sunset"] {
+  --color-primary: oklch(0.7 0.19 25);
+  --color-accent: oklch(0.79 0.16 70);
+}
+:root[data-theme="theme-mint"] {
+  --color-primary: oklch(0.76 0.15 165);
+  --color-accent: oklch(0.8 0.13 195);
+}
+:root[data-theme="theme-candy"] {
+  --color-primary: oklch(0.72 0.2 305);
+  --color-accent: oklch(0.75 0.18 350);
+}
+:root[data-keys="keys-neon"] .key-cap {
+  border-color: color-mix(in oklab, var(--color-primary) 60%, transparent);
+  box-shadow: 0 0 10px color-mix(in oklab, var(--color-primary) 35%, transparent);
+}
+:root[data-keys="keys-bubble"] .key-cap {
+  border-radius: 999px;
+}
