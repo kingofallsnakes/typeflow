@@ -40,7 +40,7 @@ export const SHOP_ITEMS: ShopItem[] = [
     id: "theme-aurora",
     category: "theme",
     name: "Aurora",
-    description: "The classic Cobra glow.",
+    description: "The classic TYPEFLOW glow.",
     emoji: "🌌",
     price: 0,
     level: 1,

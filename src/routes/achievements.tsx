@@ -8,13 +8,13 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/achievements")({
   head: () => ({
     meta: [
-      { title: "Badges — Cobra" },
+      { title: "Badges — TYPEFLOW" },
       {
         name: "description",
         content:
-          "Collect badges, levels, coins and streaks earned from real typing practice in Cobra.",
+          "Collect badges, levels, coins and streaks earned from real typing practice in TYPEFLOW.",
       },
-      { property: "og:title", content: "Badges — Cobra" },
+      { property: "og:title", content: "Badges — TYPEFLOW" },
       {
         property: "og:description",
         content: "Levels, coins, streaks and badges earned from real typing.",

@@ -20,13 +20,13 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/ai")({
   head: () => ({
     meta: [
-      { title: "AI Lessons — Cobra" },
+      { title: "AI Lessons — TYPEFLOW" },
       {
         name: "description",
         content:
           "Generate fresh typing lessons on any topic: animals, space, jokes, coding, sports and more, at four difficulty levels.",
       },
-      { property: "og:title", content: "AI Lessons — Cobra" },
+      { property: "og:title", content: "AI Lessons — TYPEFLOW" },
       {
         property: "og:description",
         content: "Endless typing practice generated on any topic you like.",

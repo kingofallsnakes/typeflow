@@ -20,12 +20,12 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/progress")({
   head: () => ({
     meta: [
-      { title: "Progress — Cobra" },
+      { title: "Progress — TYPEFLOW" },
       {
         name: "description",
         content: "Charts of your typing speed, accuracy and practice time over days and months.",
       },
-      { property: "og:title", content: "Progress — Cobra" },
+      { property: "og:title", content: "Progress — TYPEFLOW" },
       { property: "og:description", content: "See how your speed and accuracy trend over time." },
     ],
   }),

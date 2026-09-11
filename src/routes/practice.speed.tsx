@@ -9,12 +9,12 @@ import { useSettings } from "@/context/SettingsContext";
 export const Route = createFileRoute("/practice/speed")({
   head: () => ({
     meta: [
-      { title: "Speed practice — Cobra" },
+      { title: "Speed practice — TYPEFLOW" },
       {
         name: "description",
         content: "Push your words per minute while holding your accuracy threshold.",
       },
-      { property: "og:title", content: "Speed practice — Cobra" },
+      { property: "og:title", content: "Speed practice — TYPEFLOW" },
       { property: "og:description", content: "Raise your WPM without sacrificing accuracy." },
     ],
   }),

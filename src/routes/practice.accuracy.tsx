@@ -8,12 +8,12 @@ import { useSettings } from "@/context/SettingsContext";
 export const Route = createFileRoute("/practice/accuracy")({
   head: () => ({
     meta: [
-      { title: "Accuracy practice — Cobra" },
+      { title: "Accuracy practice — TYPEFLOW" },
       {
         name: "description",
         content: "Precision drills: fewer mistakes, fewer backspaces, a steadier rhythm.",
       },
-      { property: "og:title", content: "Accuracy practice — Cobra" },
+      { property: "og:title", content: "Accuracy practice — TYPEFLOW" },
       { property: "og:description", content: "Train precision before speed." },
     ],
   }),

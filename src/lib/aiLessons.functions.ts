@@ -46,7 +46,7 @@ export const generateAiLesson = createServerFn({ method: "POST" })
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
-        "X-Title": "Cobra",
+        "X-Title": "TYPEFLOW",
       },
       body: JSON.stringify({
         model: process.env["OPENROUTER_MODEL"] || DEFAULT_MODEL,

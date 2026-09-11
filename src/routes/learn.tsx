@@ -11,13 +11,13 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/learn")({
   head: () => ({
     meta: [
-      { title: "Learn — Cobra touch typing course" },
+      { title: "Learn — TYPEFLOW touch typing course" },
       {
         name: "description",
         content:
           "A structured touch typing course: home row, top row, bottom row, punctuation and full sentences.",
       },
-      { property: "og:title", content: "Learn — Cobra touch typing course" },
+      { property: "og:title", content: "Learn — TYPEFLOW touch typing course" },
       {
         property: "og:description",
         content: "Work through the home row to fluent sentences, one guided lesson at a time.",

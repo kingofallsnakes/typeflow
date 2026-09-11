@@ -115,7 +115,14 @@ export function AppShell({ children }: { children: ReactNode }) {
         </nav>
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 pb-28 sm:px-5 sm:py-10 md:pb-10">{children}</main>
+      <main className="mx-auto max-w-6xl px-4 py-6 pb-16 sm:px-5 sm:py-10 md:pb-8">{children}</main>
+
+      {/* Watermark */}
+      <footer className="pointer-events-none pb-24 pt-4 text-center select-none md:pb-8">
+        <span className="font-mono text-[11px] font-medium tracking-[0.3em] uppercase text-muted-foreground/35">
+          cobra
+        </span>
+      </footer>
 
       {/* Mobile / tablet tab bar */}
       <nav

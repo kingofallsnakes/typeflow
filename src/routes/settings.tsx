@@ -10,12 +10,12 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — Cobra" },
+      { title: "Settings — TYPEFLOW" },
       {
         name: "description",
         content: "Theme, keyboard hints, caret style, font size, daily goal and accuracy target.",
       },
-      { property: "og:title", content: "Settings — Cobra" },
+      { property: "og:title", content: "Settings — TYPEFLOW" },
       { property: "og:description", content: "Tune the interface and your practice targets." },
     ],
   }),

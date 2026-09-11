@@ -4,12 +4,12 @@ import { AppShell } from "@/components/layout/AppShell";
 export const Route = createFileRoute("/test/")({
   head: () => ({
     meta: [
-      { title: "Typing test — Cobra" },
+      { title: "Typing test — TYPEFLOW" },
       {
         name: "description",
         content: "Timed typing tests from 15 seconds to 10 minutes with a full result breakdown.",
       },
-      { property: "og:title", content: "Typing test — Cobra" },
+      { property: "og:title", content: "Typing test — TYPEFLOW" },
       { property: "og:description", content: "Measure your WPM, accuracy and consistency." },
     ],
   }),

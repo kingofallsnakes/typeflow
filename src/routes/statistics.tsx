@@ -17,12 +17,12 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/statistics")({
   head: () => ({
     meta: [
-      { title: "Statistics — Cobra" },
+      { title: "Statistics — TYPEFLOW" },
       {
         name: "description",
         content: "Per-key and per-transition accuracy, speed and mastery, plus full session history.",
       },
-      { property: "og:title", content: "Statistics — Cobra" },
+      { property: "og:title", content: "Statistics — TYPEFLOW" },
       { property: "og:description", content: "Every key and key-pair scored from your own typing." },
     ],
   }),

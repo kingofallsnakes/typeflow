@@ -1,5 +1,5 @@
 <p align="center">
-  <strong>🐍 COBRA</strong><br/>
+  <strong>TYPEFLOW</strong><br/>
   <em>Adaptive touch typing coach</em>
 </p>
 
@@ -13,7 +13,7 @@
 
 ---
 
-Cobra analyses **every keystroke** you make, identifies exactly which keys and key-transitions you struggle with, and generates **personalised drills** around your weaknesses. No random filler — every exercise exists because the adaptive engine found a gap in your muscle memory.
+TypeFlow analyses **every keystroke** you make, identifies exactly which keys and key-transitions you struggle with, and generates **personalised drills** around your weaknesses. No random filler — every exercise exists because the adaptive engine found a gap in your muscle memory.
 
 ## ✨ Features
 
@@ -187,12 +187,12 @@ npm run test
 
 Runs 18 unit tests covering the typing engine, metrics calculation, adaptive mastery scoring, skill selection and exercise generation.
 
-## 📄 License
+## 📄 License & Rights
 
-This project is proprietary. All rights reserved.
+This project and all rights belong to **Cobra** ([kingofallsnakes](https://github.com/kingofallsnakes)). All rights reserved.
 
 ---
 
 <p align="center">
-  Built with 🐍 by <a href="https://github.com/kingofallsnakes">kingofallsnakes</a>
+  <sub>⚡ TypeFlow · Watermark: <strong>cobra</strong></sub>
 </p>

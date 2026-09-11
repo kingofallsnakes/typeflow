@@ -9,9 +9,9 @@ import type { SessionResult } from "@/core/typing/typingTypes";
 export const Route = createFileRoute("/lesson/$lessonId")({
   head: () => ({
     meta: [
-      { title: "Lesson — Cobra" },
+      { title: "Lesson — TYPEFLOW" },
       { name: "description", content: "Guided touch typing lesson with live feedback." },
-      { property: "og:title", content: "Lesson — Cobra" },
+      { property: "og:title", content: "Lesson — TYPEFLOW" },
       {
         property: "og:description",
         content: "Guided touch typing lesson with finger hints and live feedback.",

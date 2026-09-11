@@ -5,13 +5,13 @@ import { AppShell } from "@/components/layout/AppShell";
 export const Route = createFileRoute("/practice/")({
   head: () => ({
     meta: [
-      { title: "Practice modes — Cobra" },
+      { title: "Practice modes — TYPEFLOW" },
       {
         name: "description",
         content:
           "Choose weakness drills, speed runs, accuracy work, AI lessons or free practice with your own text.",
       },
-      { property: "og:title", content: "Practice modes — Cobra" },
+      { property: "og:title", content: "Practice modes — TYPEFLOW" },
       {
         property: "og:description",
         content: "Weakness drills, speed runs, accuracy work, AI lessons and free practice.",

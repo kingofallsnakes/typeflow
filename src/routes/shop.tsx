@@ -9,12 +9,12 @@ import { CATEGORY_LABEL, SHOP_ITEMS, type ShopCategory } from "@/core/game/shop"
 export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
-      { title: "Coin shop — Cobra" },
+      { title: "Coin shop — TYPEFLOW" },
       {
         name: "description",
         content: "Spend the coins you earn on colour themes, keyboard skins, sound packs and celebrations.",
       },
-      { property: "og:title", content: "Coin shop — Cobra" },
+      { property: "og:title", content: "Coin shop — TYPEFLOW" },
       {
         property: "og:description",
         content: "Unlock themes, keyboard skins, sound packs and celebration effects with your coins.",
@@ -37,7 +37,7 @@ function ShopPage() {
           <div>
             <h1 className="text-balance-tight text-2xl font-semibold sm:text-3xl">Coin shop</h1>
             <p className="text-muted-foreground mt-1 text-sm">
-              Earn coins by practising, then make Cobra look and sound the way you like.
+              Earn coins by practising, then make TYPEFLOW look and sound the way you like.
             </p>
           </div>
           <div className="border-warning/40 bg-warning/10 flex items-center gap-2 rounded-full border px-4 py-2">

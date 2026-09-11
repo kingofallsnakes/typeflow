@@ -1,4 +1,4 @@
-// Cobra player backend — the project owner's own Supabase instance.
+// TYPEFLOW player backend — the project owner's own Supabase instance.
 // The anon key is a public, publishable key: it is safe in browser code
 // because every table is protected by row-level security policies.
 import { createClient } from "@supabase/supabase-js";

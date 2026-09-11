@@ -10,12 +10,12 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/practice/weakness")({
   head: () => ({
     meta: [
-      { title: "Weakness practice — Cobra" },
+      { title: "Weakness practice — TYPEFLOW" },
       {
         name: "description",
         content: "Targeted drills generated from your weakest keys and slowest key transitions.",
       },
-      { property: "og:title", content: "Weakness practice — Cobra" },
+      { property: "og:title", content: "Weakness practice — TYPEFLOW" },
       {
         property: "og:description",
         content: "Drills built from your own error data, not random words.",

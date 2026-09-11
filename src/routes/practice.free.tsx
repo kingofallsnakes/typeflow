@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/practice/free")({
   head: () => ({
     meta: [
-      { title: "Free practice — Cobra" },
+      { title: "Free practice — TYPEFLOW" },
       { name: "description", content: "Practise on your own text: paste it, clean it up, type it." },
-      { property: "og:title", content: "Free practice — Cobra" },
+      { property: "og:title", content: "Free practice — TYPEFLOW" },
       { property: "og:description", content: "Bring your own text and practise on it." },
     ],
   }),

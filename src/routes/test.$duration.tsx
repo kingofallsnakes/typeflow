@@ -7,9 +7,9 @@ import { generateTestText } from "@/core/adaptive/exerciseGenerator";
 export const Route = createFileRoute("/test/$duration")({
   head: () => ({
     meta: [
-      { title: "Timed typing test — Cobra" },
+      { title: "Timed typing test — TYPEFLOW" },
       { name: "description", content: "A timed typing test with live WPM, accuracy and errors." },
-      { property: "og:title", content: "Timed typing test — Cobra" },
+      { property: "og:title", content: "Timed typing test — TYPEFLOW" },
       { property: "og:description", content: "Live WPM, accuracy and a full result breakdown." },
     ],
   }),

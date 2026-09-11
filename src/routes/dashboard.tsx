@@ -22,12 +22,12 @@ import type { SessionResult } from "@/core/typing/typingTypes";
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — Cobra" },
+      { title: "Dashboard — TYPEFLOW" },
       {
         name: "description",
         content: "Your typing speed, accuracy, daily goal and the skill you should practise next.",
       },
-      { property: "og:title", content: "Dashboard — Cobra" },
+      { property: "og:title", content: "Dashboard — TYPEFLOW" },
       {
         property: "og:description",
         content: "Track today's practice and see the exact skill to work on next.",

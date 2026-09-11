@@ -17,13 +17,13 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cobra — Adaptive touch typing coach" },
+      { title: "TYPEFLOW — Adaptive touch typing coach" },
       {
         name: "description",
         content:
-          "Cobra analyses every keystroke, finds your weakest keys and transitions, and builds practice around them. Build muscle memory, one keystroke at a time.",
+          "TYPEFLOW analyses every keystroke, finds your weakest keys and transitions, and builds practice around them. Build muscle memory, one keystroke at a time.",
       },
-      { property: "og:title", content: "Cobra — Adaptive touch typing coach" },
+      { property: "og:title", content: "TYPEFLOW — Adaptive touch typing coach" },
       {
         property: "og:description",
         content:
@@ -165,8 +165,11 @@ function Landing() {
         </div>
       </section>
 
-      <footer className="border-border text-muted-foreground border-t py-8 text-center text-xs">
-        Cobra — your typing data stays on this device until you sign in.
+      <footer className="border-border text-muted-foreground border-t py-8 text-center text-xs flex flex-col items-center gap-3">
+        <p>TYPEFLOW — your typing data stays on this device until you sign in.</p>
+        <span className="font-mono text-[11px] font-medium tracking-[0.3em] uppercase text-muted-foreground/35 select-none pointer-events-none">
+          cobra
+        </span>
       </footer>
     </div>
   );

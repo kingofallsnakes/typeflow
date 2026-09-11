@@ -16,12 +16,12 @@ import type { SessionResult } from "@/core/typing/typingTypes";
 export const Route = createFileRoute("/placement")({
   head: () => ({
     meta: [
-      { title: "Find your level — Cobra placement test" },
+      { title: "Find your level — TYPEFLOW placement test" },
       {
         name: "description",
         content: "A one-minute typing check that picks the right starting lesson for you.",
       },
-      { property: "og:title", content: "Find your level — Cobra" },
+      { property: "og:title", content: "Find your level — TYPEFLOW" },
       {
         property: "og:description",
         content: "Take a short typing check and unlock the lessons that match your skill.",

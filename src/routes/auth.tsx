@@ -11,12 +11,12 @@ import { supabase } from "@/lib/supabaseClient";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — Cobra" },
+      { title: "Sign in — TYPEFLOW" },
       {
         name: "description",
-        content: "Create a free Cobra account to keep your XP, badges and streak on every device.",
+        content: "Create a free TYPEFLOW account to keep your XP, badges and streak on every device.",
       },
-      { property: "og:title", content: "Sign in — Cobra" },
+      { property: "og:title", content: "Sign in — TYPEFLOW" },
       {
         property: "og:description",
         content: "Save your typing progress to the cloud and continue on any device.",
