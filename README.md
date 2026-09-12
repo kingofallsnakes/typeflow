@@ -18,6 +18,16 @@
   <strong>⌨️ Capture → 🧠 Analyze → 🎯 Adapt → 📈 Improve</strong>
 </p>
 
+
+<img width="1919" height="943" alt="Image" src="https://github.com/user-attachments/assets/a81630fb-2e90-44a2-9a41-d3a771f14e6c" />
+
+<img width="1919" height="950" alt="Image" src="https://github.com/user-attachments/assets/91ac6d62-33a6-4341-a5e7-586b20fa10e5" />
+
+<img width="1919" height="948" alt="Image" src="https://github.com/user-attachments/assets/b1bb3cc3-b135-414b-af28-8c40880501dd" />
+
+<img width="1919" height="946" alt="Image" src="https://github.com/user-attachments/assets/8249c658-00f0-4ed9-9444-036e5a8cb65f" />
+
+
 ---
 
 ## 🧬 Typing Is More Than WPM
